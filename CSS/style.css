@@ -1,0 +1,61 @@
+*{
+  padding:0;
+  margin:0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+}
+
+section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  transition: all .5s;
+  filter: grayscale(100%);
+}
+
+section:hover {
+  flex:2;
+  filter: grayscale(0);
+}
+
+section h1 a{
+  background:rgba(0,0,0,0.6);
+  color:white;
+  padding: 12px 32px;
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  transition: .5s ease;
+}
+
+section h1 a:hover{
+  background:rgba(255,255,255,0.6);
+  color: #000000;
+}
+
+.essential{
+  background:url('ess.jpg') #ff0909;
+  background-position: center;
+  background-size: cover;
+}
+
+.nonessential{
+  background:url('hall.jpg') #d2ff09;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1140px) { 
+  .essential h1 { font-size: 30px }
+  .nonessential h1 { font-size: 30px }
+}
+
+@media screen and (max-width: 900px) { 
+  .essential h1 { font-size: 16px }
+  .nonessential h1 { font-size: 16px }
+}

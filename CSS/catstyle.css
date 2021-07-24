@@ -1,0 +1,71 @@
+<style type="text/css">
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: aliceblue;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    
+}
+
+header{
+    background-color: aqua;
+    border-radius: 20px;
+    width: 100%;
+    height: fit-content;
+    font-family: 'Big Shoulders Inline Text', cursive;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr auto auto;
+    align-items: center;
+}
+
+.navbar .navbar-brand {
+    font-size: 25px;
+}
+
+.but {
+    display: inline-block;
+}
+
+.about, .contact{
+    padding-right: 10px;
+    margin: auto;
+}
+
+.container1{
+    font-family: 'Big Shoulders Inline Text', cursive;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    display: grid;
+    padding: 6%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 3%;
+    grid-column-gap: 8%;
+
+}
+
+.container1 img{
+    height: 200px;
+}
+@media (max-width: 800px) {
+    .container1{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+@media (max-width: 500px) {
+    .container1{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+@media (max-width: 200px) {
+    .container1{
+        grid-template-columns: 1fr;
+    }
+
+}
