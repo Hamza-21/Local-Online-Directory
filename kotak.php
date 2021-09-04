@@ -101,7 +101,7 @@
                 die("Connection Failed!".$conn -> connect_error);
             }
 
-            $sql = "SELECT name, address FROM atm WHERE id = '3'";
+            $sql = "SELECT name, address FROM nonessen WHERE id = '9'";
             $result = $conn -> query($sql);
 
             if ($result -> num_rows > 0) {

@@ -104,7 +104,7 @@
                 die("Connection Failed!".$conn -> connect_error);
             }
 
-            $sql = "SELECT name, address, contact FROM cafe WHERE id = '5'";
+            $sql = "SELECT name, address, contact FROM nonessen WHERE id = '17'";
             $result = $conn -> query($sql);
 
             if ($result -> num_rows > 0) {
